@@ -15,7 +15,7 @@ async function getServerEntry(): Promise<ServerEntry> {
       (m) => (m.default ?? m) as ServerEntry,
     );
   }
-   serverEntryPromise;
+   return serverEntryPromise;
 }
 
 // h3 swallows in-handler throws into a normal 500 Response with body
