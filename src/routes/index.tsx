@@ -95,25 +95,25 @@ function Hero({ search, setSearch }: { search: string; setSearch: (v: string) =>
 }
 
 function Stats() {
-  const stats = [
-    { icon: Users, value: "50K+", label: "Happy travelers" },
-    { icon: Globe2, value: "70+", label: "Countries covered" },
-    { icon: Plane, value: "1,200+", label: "Tours completed" },
-    { icon: Award, value: "15", label: "Travel awards" },
-  ];
-  return (
-    <section className="container mx-auto px-4 -mt-10 relative z-10">
-      <div className="rounded-3xl bg-card shadow-elegant grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-border/50 overflow-hidden">
-        {stats.map((s) => (
-          <div key={s.label} className="p-6 text-center space-y-1">
-            <s.icon className="h-5 w-5 mx-auto text-accent" />
-            <p className="font-display text-3xl font-semibold">{s.value}</p>
-            <p className="text-xs text-muted-foreground">{s.label}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+  const stats = [
+    { icon: Users, value: "50K+", label: "Happy travelers" },
+    { icon: Globe2, value: "70+", label: "Countries covered" },
+    { icon: Plane, value: "1,200+", label: "Tours completed" },
+    { icon: Award, value: "15", label: "Travel awards" },
+  ];
+  return (
+    <section className="container mx-auto px-4 -mt-10 relative z-10">
+      <div className="rounded-3xl bg-card shadow-elegant grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-border/50 overflow-hidden">
+        {stats.map((s) => (
+          <div key={s.label} className="p-6 text-center space-y-1">
+            <s.icon className="h-5 w-5 mx-auto text-accent" />
+            <p className="font-display text-3xl font-semibold">{s.value}</p>
+            <p className="text-xs text-muted-foreground">{s.label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 function FeaturedSkeleton() {

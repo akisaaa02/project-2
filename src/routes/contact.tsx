@@ -58,7 +58,7 @@ function ContactPage() {
           {[
             { icon: MapPin, title: "Office", text: "16 Lamachaur, Pokhara" },
             { icon: Phone, title: "Phone", text: "+977 061533288" },
-            { icon: Mail, title: "Email", text: "hello@wanderly.travel" },
+            { icon: Mail, title: "Email", text: "wanderlytravel68@gmail.com" },
             { icon: Clock, title: "Hours", text: "Mon–Sat · 9am – 7pm WEST" },
           ].map((c) => (
             <div key={c.title} className="rounded-2xl bg-card border border-border/50 p-5 flex items-start gap-3 shadow-soft">
